@@ -1,0 +1,240 @@
+/* ./src/index.css */
+
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.scrollable {
+	scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+html {
+	scroll-behavior: smooth;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+}
+.yellow {
+	background-image: url("./assets/textures/yellow.png")
+}
+.blue {
+	background-image: url("./assets/textures/blue.png")
+}
+.pink {
+	background-image: url("./assets/textures/pink.png")
+}
+.orange {
+	background-image: url("./assets/textures/orange.png")
+}
+.green {
+	background-image: url("./assets/textures/green.png")
+}
+.comingsoon {
+	background-image: url("./assets/images/comingsoon.png")
+}
+.border-green-impact {
+	border-color: #436600;
+}
+.border-green-journey {
+	border-color: #658B2F;
+}
+.text-green-impact {
+	color: #436600;
+}
+.text-green-journey {
+	color: #658B2F;
+}
+.text-blue-impact {
+	color: #166870;
+}
+.text-pink-impact {
+	color: #991A63;
+}
+.text-yellow-impact {
+	color: #996A00;
+}
+.text-orange-impact {
+	color: #842C00;
+}
+.text-pink-journey {
+	color: #991A63;
+}
+.bg-green-impact {
+	background-color: #436600;
+}
+.bg-green-main {
+	background-color: #96CB41;	
+}
+.bg-orange-main {
+	background-color: #EC7D3D;	
+}
+.bg-yellow-main {
+	background-color: #F2BF3B;	
+}
+.bg-blue-main {
+	background-color: #80C7D4;	
+}
+.bg-pink-main {
+	background-color: #FF91CA;	
+}
+.bg-orange-main {
+	background-color: #EC7D3D;	
+}
+.bg-pink-journey {
+	background-color: #FFDEF1;	
+}
+.border-pink-journey {
+	border-color: #991A63;	
+}
+.chauncy {
+	font-family: chauncy-pro, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.mont {
+	font-family: montserrat, sans-serif;
+	font-style: normal;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  color: transparent;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(0, 0);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, 1px);
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */	
+	.comingsoon {
+		background-image: url("./assets/images/comingsoonmobile.png")
+	}
+}
+ 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+}

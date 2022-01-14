@@ -1,0 +1,61 @@
+{
+  "name": "landforall",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "firebase": "^8.2.2",
+    "gsap": "file:../../Downloads/gsap-member/gsap-member/npm-install-this/gsap-bonus.tgz",
+    "postcss-loader": "^4.1.0",
+    "sass-loader": "^10.1.0",
+    "scrollmagic": "^2.0.8",
+    "vue": "^2.6.11",
+    "vue-carousel": "^0.18.0",
+    "vue-js-modal": "^2.0.0-rc.6",
+    "vue-konami-code": "^1.0.0",
+    "vue-router": "^3.4.9",
+    "vue-scrollmagic": "^1.2.0",
+    "vuefire": "^2.2.5",
+    "vuex": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "imports-loader": "^1.2.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
